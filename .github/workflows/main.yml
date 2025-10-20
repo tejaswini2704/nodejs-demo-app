@@ -18,7 +18,6 @@ jobs:
         with:
           node-version: 18
 
-      
       - name: Install dependencies
         run: npm install
 
@@ -31,6 +30,3 @@ jobs:
           context: . 
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-demo-app:latest
-          
-      - name: Logout from Docker Hub
-        run: docker logout

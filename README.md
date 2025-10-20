@@ -29,7 +29,7 @@ npm install
 ### 3️⃣ Run the App Locally
 
 ```bash
-node index.js
+node app.js
 ```
 
 Then open your browser at 👉 **[http://localhost:3000](http://localhost:3000)**

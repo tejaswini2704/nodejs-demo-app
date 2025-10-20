@@ -66,9 +66,12 @@ This repository includes an automated CI/CD workflow located at:
 
 1. Checkout code
 2. Setup Node.js
-3. Run test command
-4. Build Docker image
-5. Push image to Docker Hub
+3.Install dependencies 
+4. Run test command
+5. Setup Docker Buildx
+6. Login to Docker Hub
+7. Build Docker image and Push image to Docker Hub
+8. Logout from Docker Hub
 
 ---
 

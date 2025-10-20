@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Simple CI/CD Pipeline
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -27,6 +27,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: . 
+          context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-demo-app:latest
